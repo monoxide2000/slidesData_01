@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Circuitos eléctricos - slides</title>
+		<title>ACP149 - Estadística</title>
 
-		<meta name="description" content="Circuits - introCourse>
-		<meta name="author" content="Julio Ramírez-Pacheco">
+		<meta name="description" content="Data analysis slides">
+		<meta name="author" content="Julio César Ramírez-Pacheco">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -39,12 +39,12 @@
 	</head>
 
 	<body>
-		<div class="myLogo" style="background: url(img/logoUQRoo.png);
+		<div class="myLogo" style="background: url(img/uqroo.png);
 												position: absolute;
-												bottom: 40px;
-												right: 80px;
-												width: 190px;
-												height: 100px;
+												bottom: 80px;
+												right: 20px;
+												width: 240px;
+												height: 120px;
 												background-size: cover;">
 		</div>
 		<div class="reveal">
@@ -52,142 +52,161 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1 style="font-family: 'Kaushan Script', cursive; font-size: 3.1em;"><span style="text-transform: capitalize;"><span>Circuitos Eléctricos</span></h1>
-					<h3 style="font-family: 'Kaushan Script', cursive;"><span style="text-transform: uppercase;">AFDE-PPR-03</span></h3>
+					<h1 style="font-family: 'Kaushan Script', cursive; font-size: 3.1em;"><span style="text-transform: capitalize;"><span>Análisis de datos</span></h1>
+					<h3 style="font-family: 'Kaushan Script', cursive;"><span>U</span><span style="text-transform: lowercase;">sando </span>R</h3>
 					<p style="font-family: 'Dancing Script', cursive;">Dr. Julio César Ramírez-Pacheco</p>
-					<p style="font-size:1.5rem">Presentación en: <a style="color:lightblue;" href="https://monoxide2000.github.io/slidesELECTRIC_01">https://monoxide2000.github.io/slidesELECTRIC_01</a></p>
+					<p style="font-size:1.5rem">Presentación en: <a style="color:lightblue;" href="https://monoxide2000.github.io/slidesSTAT_HOT_01">https://monoxide2000.github.io/slidesData_01</a></p>
 
 				</section>
 
 				<section data-transition="zoom">
 					<h2>Contenido</h2>
 					<ul>
-						<li class="fragment">Reglas para las clases.</li>
-						<li class="fragment">Temario y planeación didáctica</li>
-						<li class="fragment">Actividades en el semestre.</li>
-						<li class="fragment">Asesorias.</li>
-						<li class="fragment">Fechas importantes.</li>
-						<li class="fragment">¿Preguntas?</li>
-					</ul>
-				</section>
-
-
-
-				<section data-transition="zoom">
-					<h2>Temario</h2>
-					<img src="img/temarioC.jpg" alt="TemarioAD149" style="width:60%;">
-
-				</section>
-
-				<section data-transition="zoom">
-					<h2>Temario del curso</h2>
-					<ul>
-						<li class="fragment">Disponible en Teams y Moodle.</li>
-						<li class="fragment">El curso consta de 3 unidades.</li>
-            <li class="fragment">Todas las unidades requieren conocimientos matemáticos previos.</li>
-            <li class="fragment">En todas las unidades se requieren actividades de simulación.</li>
-            <li class="fragment">Importante cumplir en tiempo y forma con las actividades en el Moodle.</li>
-						</li>
+						<li class="fragment">Breve introducción a R.</li>
+						<li class="fragment">Estructura de datos en R</li>
+						<li class="fragment">Generación de valores.</li>
+						<li class="fragment">Ejemplo: gráficos de funciones simples.</li>
+						<li class="fragment">¿Preguntas?.</li>
 					</ul>
 				</section>
 
 				<section data-transition="zoom">
-					<h2>Unidad 1: Conceptos y leyes fundamentales</h2>
+					  <h2>¿Qué es R?</h2>
+			      <ul>
+			      	<li class="fragment">R es un dialecto de un lenguaje llamada S.</li>
+			      	<li class="fragment">R es gratuito y de código abierto.</li>
+			      	<li class="fragment">Disponible para Windows, MACOSX, Linux, Unix e incluso playstation.</li>
+			      	<li class="fragment">De igual forma podemos accesar a R por medio de la nube mediante RStudio cloud.</li>
+			      </ul>
+				</section>
+
+				<section data-transition="zoom">
+						<h2>Características de R</h2>
+						<ul>
+							<li class="fragment">R está diseñado especialmente para análisis estadístico y gráficos.</li>
+							<li class="fragment">Contiene más de 17000 paquetes que incrementan su funcionalidad.</li>
+							<li class="fragment">Permite realizar además; análisis de series de tiempo, manipulación de datos, aprendizaje maquina, etc..</li>
+							<li class="fragment">Para descargar R se tiene que dirigir a <a href="https://www.r-project.org/">https://www.r-project.org/</a></li>
+						</ul>
+				</section>
+
+				<section data-transition="zoom">
+					<h2>R para macOSX</h2>
+					<img src="img/r_mac.png" alt="R for MAC" style="width:75%; border: none;">
+				</section>
+
+
+				<section data-transition="zoom">
+						<h2>RStudio</h2>
+						<ul>
+							<li class="fragment">RStudio es una interfaz gráfica para R.</li>
+							<li class="fragment">RStudio tiene una versión gratuita que es potente y suficiente para el curso.</li>
+							<li class="fragment">RStudio facilita muchos procesos como la visualización de tablas, control de versiones con git, creación de proyectos, etc.</li>
+							<li class="fragment">Para descargar RStudio se tiene que dirigir a: <a href="https://rstudio.com/">https://rstudio.com/</a></li>
+						</ul>
+				</section>
+
+				<section data-transition="zoom">
+					<h2>RStudio para macOSX</h2>
+					<img src="img/rstudio_mac.png" alt="RStudio for MAC" style="width:95%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+						<h2>Iniciando con R</h2>
+						<img src="img/calc.svg" alt="R as calculatorC" style="width:95%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+						<h2>Otras funciones en R</h2>
+						<img src="img/fun.svg" alt="Other functions in R" style="width:95%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+						<h2>Otras funciones en R: cont.</h2>
+						<img src="img/fun2.svg" alt="Other functions in R" style="width:95%; border: none;">
+				</section>
+
+
+				<section data-transition="zoom">
+						<h2>Variables en R</h2>
+						<ul>
+							<li class="fragment">R como se ha visto funciona como una potente calculadora científica.</li>
+							<li class="fragment">Sin embargo, la mayor potencia de R está en el análisis estadístico.</li>
+							<li class="fragment">Para lo anterior se hace uso extensivo de variables.</li>
+							<li class="fragment">Una variable guarda valores que posteriormente pueden servir para realizar otro cálculo.</li>
+						</ul>
+				</section>
+
+				<section data-transition="zoom">
+						<h2>Variables en R (cont.)</h2>
+						<img src="img/vars.svg" alt="Variables in R" style="width:95%; border: none;">
+				</section>
+
+
+				<section data-transition="zoom">
+					<h2>Estructuras de datos</h2>
 					<ul>
-						<li class="fragment">Introducción a los circuitos eléctricos.</li>
-						<li class="fragment">Sistemas de unidades.</li>
-						<li class="fragment">Carga, corriente, voltaje y potencia.</li>
-						<li class="fragment">Elementos de un circuito.</li>
-					  <li class="fragment">Ley de Ohm</li>
-					  <li class="fragment">Conexiones serie, paralelo, delta y estrella.</li>
-						<li class="fragment">Leyes de Kirchhoff.</li>
-						<li class="fragment">Análisis de circuitos de una sola trayectoria.</li>
+						<li class="fragment">R posee  múltiples tipos de estructura de datos, sin embargo, la mayoría surge de los vectores.</li>
+						<li class="fragment">Los vectores más conocidos son los atómicos, las listas y los data.frames.</li>
+            <li class="fragment">Comprender la forma en que se crean estos tipos de objetos es importante ya que permite manejarlos con más facilidad.</li>
+            <li class="fragment">De igual forma su comprensión permite entender los tipos de datos más complejos.</li>
 					</ul>
 				</section>
 
 				<section data-transition="zoom">
-					<h2>Unidad 2: Técnicas para el análisis de circuitos</h2>
+					<h2>Clasificación de vectores</h2>
+					<img src="img/class.jpeg" alt="Vector classification" style="width:90%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+					<h2>Vectores atómicos</h2>
+					<img src="img/atomicos.jpeg" alt="Atomic vector classification" style="width:105%; border: none;">
+				</section>
+
+
+				<section data-transition="zoom">
+					<h2>Vectores atómicos: carácteres</h2>
+					<img src="img/char.svg" alt="Characters in R" style="width:105%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+					<h2>Vectores atómicos: numéricos</h2>
+					<img src="img/double.svg" alt="Doubles in R" style="width:105%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+					<h2>Aplicaciones: gráficos de funciones</h2>
+					<img src="img/senoidal.jpeg" alt="fun to graph in R" style="width:75%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+					<h2>Aplicaciones: gráficos de funciones: código</h2>
+					<img src="img/senoidal.svg" alt="fun to graph in R" style="width:105%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+					<h2>Aplicaciones: gráficos de funciones</h2>
+					<img src="img/triangular.jpeg" alt="fun to graph in R" style="width:75%; border: none;">
+				</section>
+
+				<section data-transition="zoom">
+					<h2>Aplicaciones: gráficos de funciones: código</h2>
+					<img src="img/triangular.svg" alt="fun to graph in R" style="width:105%; border: none;">
+				</section>
+
+
+				<section data-transition="zoom">
+					<h2>Asesorias para los trabajos</h2>
 					<ul>
-						<li class="fragment">Análisis de nodos.</li>
-						<li class="fragment">Análisis de mallas.</li>
-						<li class="fragment">Linealidad y superposición.</li>
-						<li class="fragment">Transformación de fuentes.</li>
-						<li class="fragment">Teoremas de Thévenin y Norton.</li>
-						<li class="fragment">Teorema de máxima transferencia de potencia.</li>
-						</li>
-					</ul>
-				</section>
-
-				<section data-transition="zoom">
-					<h2>Unidad 3: Circuito de primer y segundo orden</h2>
-					<ul>
-						<li class="fragment">Inductancia, capacitancia y circuitos RL.</li>
-						<li class="fragment">Propiedades de la respuesta exponencial.</li>
-						<li class="fragment">Circuitos RC sin fuente.</li>
-						<li class="fragment">Función escalón unitario.</li>
-						<li class="fragment">Respuesta natural y forzada.</li>
-						<li class="fragment">Circuitos RLC.</li>
-						<li class="fragment">Respuesta natural y forzada en circuitos RLC.</li>
-						<li class="fragment">Respuesta escalón unitario en circuitos RLC.</li>
-
-					</ul>
-				</section>
-
-
-				<section data-transition="zoom">
-					<h2>Bibliografía</h2>
-					<p style="font-size: 0.6em; text-align: justify;">William H. Hayt, Jack, Jack Kemmerly, Steven M. Durbin,” Engineering Circuit Analysis”, Mc Graw Hill, 8th edition, 2012.</p>
-					<img style= "width:35%;" src="img/hayt.jpg" alt="Book of Hayt">
-				</section>
-
-				<section data-transition="zoom">
-					<h2>Bibliografía</h2>
-					<p style="font-size: 0.6em; text-align: justify;">Robert L. Boylestad, “Introductory Circuit Analysis”, Pearson, 13th edition, 2015.</p>
-					<img style= "width:35%;" src="img/boylestad.jpg" alt="Book of Boylestad">
-				</section>
-
-
-				<section data-transition="zoom">
-					<h2>Bibliografía</h2>
-					<p style="font-size: 0.6em; text-align: justify;">Johnson, Hilburn, Johnson & Scott, “Análisis básico de circuitos eléctricos”, Prentice Hall, 5ª  edición.</p>
-					<img style= "width:35%;" src="img/johnson.jpg" alt="Book of Johnson">
-				</section>
-
-
-				<section data-transition="zoom">
-					<h2>Planeación didáctica</h2>
-					<ul>
-						<li class="fragment">Disponible en Moodle, Teams y se enviará a sus correos institucionales.</li>
-						<li class="fragment">Flexible para modificar algunas actividades.</li>
-						<li class="fragment">La gestión de las tareas se hará a través de Moodle.</li>
-						<li class="fragment">Importante cumplir en tiempo y forma con las actividades.</li>
-					</ul>
-				</section>
-
-				<section data-transition="zoom">
-					<h2>Actividades en el curso</h2>
-					<ul>
-						<li class="fragment">Tests y exámenes utilizando la plataforma Moodle.</li>
-						<li class="fragment">Investigaciones utilizando material en línea de la biblioteca o Internet.</li>
-						<li class="fragment">Actividades de simulación utilizando diferentes herramientas.</li>
-						<li class="fragment">Resolución de ejercicios y problemas.</li>
-					</ul>
-				</section>
-
-
-				<section data-transition="zoom">
-					<h2>Asesorías para los trabajos</h2>
-					<ul>
-						<li class="fragment">Se puede enviar un correo a juliocr@uqroo.edu.mx con la duda o postear la duda en Teams o Moodle.</li>
-						<li class="fragment">Si lo anterior no es suficiente se puede solicitar una reunión virtual por Teams.</li>
+						<li class="fragment">Se puede enviar un correo a  juliocr@uqroo.edu.mx con la duda.</li>
+						<li class="fragment">Si el correo no es suficiente se puede hacer la petición para una reunión virtual mediante Microsoft Teams.</li>
 					</ul>
 				</section>
 
 				<section>
-
 					<h2>¿Preguntas?</h2>
-
 				</section>
+
 
 
 
